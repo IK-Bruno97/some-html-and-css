@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            html,
+            body {
+                height: 100%;
+                margin: 0;
+            }
+            .wrap {
+                height: 100%;
+            }
+            .image {
+                border-radius: 25px;
+                display: block;
+                left: 50%;
+                top: 50%;
+                width: 80%;
+                height: 50px;
+                transform: translate(-50%, -50%);
+                position: absolute;
+            }
+            .div1, .div2 {
+                width: 100%;
+                height: 50%;
+                float: left;
+            }
+            .div1 {
+                background: red;
+            }
+            .div2 {
+                background: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <input class="image" type="text" placeholder="SEARCH.." />
+            <div class="div1"></div>
+            <div class="div2"></div>
+        </div>
+    </body>
+    </html>
