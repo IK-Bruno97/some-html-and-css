@@ -1,0 +1,240 @@
+<!--<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            :root{
+            --swm-logo-height:36px;
+            --swm-color-mode-enabled:var(--swm-navy-light-20);
+            --ifm-transition-fast:200ms;
+            --swm-color-mode-enabled-landing:var(--swm-off-white);
+            --swm-off-white:#f8f9ff;
+            --swm-color-mode-disabled-color:var(--swm-navy-light-20);
+            --swm-navy-light-20:#c1c6e5;
+
+            }
+            :root[data-theme=dark] {
+            --swm-color-mode-enabled:var(--swm-off-navy);
+
+            }
+
+            .toggle_MW0i {
+            height:var(--swm-logo-height); 
+            margin-right:0;
+            width:calc(var(--swm-logo-height)*2)
+            }
+            colorModeToggle_x44X {
+            margin:0 1.5em
+            }
+            .clean-btn {
+            background:none;
+            border:none;
+            color:inherit;
+            cursor:pointer;
+            font-family:inherit;
+            padding:0
+            }
+            .toggleButton_yw5v {
+            align-items:center;
+            border:1px solid var(--swm-color-mode-enabled);
+            border-radius:0;
+            box-shadow:none;
+            display:flex;
+            height:100%;
+            justify-content:center;
+            transition:background var(--ifm-transition-fast);
+            width:100%
+            }
+            .toggleButtonLanding_Atot {
+            border:1px solid var(--swm-color-mode-enabled-landing)
+            }
+            .iconContainer_lITU {
+            align-items:center;
+            color:var(--swm-color-mode-disabled-color);
+            display:flex;
+            flex:1;
+            height:100%;
+            justify-content:center
+            }
+
+            .iconLandingContainer_RtqT {
+            color:var(--swm-color-mode-disabled-color-landing)
+            }
+
+            .darkIconContainer_Gnqc {
+            flex:1;
+            height:100%;
+            transform:scaleX(-1)
+            }
+
+            [data-theme=dark] .darkToggleIcon_ekgs,
+            [data-theme=light] .lightToggleIcon_SFTY {
+            background-color:var(--swm-color-mode-enabled);
+            color:var(--ifm-font-color-base)
+            }
+        </style>
+    </head>
+    <body>
+        <div class="toggle_MW0i colorModeToggle_x44X">
+            <button class="clean-btn toggleButton_yw5v toggleButtonLanding_Atot" type="button" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite">
+                <div class="iconContainer_lITU lightToggleIcon_SFTY iconLandingContainer_RtqT">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                <path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z">
+                </path>
+                </svg>
+                </div>
+
+                <div class="iconContainer_lITU darkIconContainer_Gnqc darkToggleIcon_ekgs iconLandingContainer_RtqT">
+                <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z">
+                </path>
+                </svg>
+                </div>
+            </button>
+        </div>
+    </body>
+</html>-->
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        :root {
+            --togglebd: #232222;
+            --darkbg:#2e2406;
+            --lightbg: #dfe1eb;;
+            --background: rgb(224, 216, 216);
+        }
+
+        .dark-mode-theme{
+            --togglebd:rgb(195, 183, 183);
+            --darkbg:#f5e9ca;
+            --lightbg: linear-gradient(40deg,#ff0080,#ff8c00 70%);
+            --background: rgb(38, 35, 35);
+        }
+        body{
+            background: var(--background);
+        }
+        .toggle_MW0i {
+            height: 36px;
+            margin-right: 0;
+            width: calc(36px * 2);
+            position: relative;
+            float: right;
+            margin: 3rem 0.11rem 3rem 3rem; 
+        }
+
+
+        .clean-btn {
+            background: none;
+            border: none;
+            color: inherit;
+            cursor: pointer;
+            font-family: inherit;
+            padding: 0
+        }
+
+        .toggleButton_yw5v {
+            align-items: center;
+            border: 1px solid var(--togglebd);;
+            border-radius: 0;
+            box-shadow: none;
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            transition: background 200ms;
+            width: 100%
+        }
+
+        .iconContainer_lITU {
+            align-items: center;
+            color: #20cf40;;
+            display: flex;
+            flex: 1;
+            height: 100%;
+            justify-content: center
+        }
+
+        .lighticon_RtqT {
+            color: #f1aa54;
+        }
+        .darkicon_RtqT {
+            color: #3649c5;
+        }
+        .lightIconContainer_Gnqc{
+            flex: 1;
+            height: 100%;
+            background-color: var(--lightbg);
+            transform: scaleX(-1)
+        }
+        .darkIconContainer_Gnqc {
+            flex: 1;
+            height: 100%;
+            background-color: var(--darkbg);
+            transform: scaleX(-1)
+
+        }
+    </style>
+</head>
+<body>
+<div class="toggle_MW0i colorModeToggle_x44X">
+    <button class="clean-btn toggleButton_yw5v" type="button"
+            title="Switch between dark and light mode (currently light mode)"
+            aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite">
+        <div  id="toggleLight"  class="iconContainer_lITU lightToggleIcon_SFTY lightIconContainer_Gnqc lighticon_RtqT">
+            <svg viewBox="0 0 24 24" width="24" height="24">
+                <path fill="currentColor"
+                      d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z">
+                </path>
+            </svg>
+        </div>
+
+        <div  id="toggleDark" class="iconContainer_lITU darkIconContainer_Gnqc darkToggleIcon_ekgs darkicon_RtqT">
+            <svg viewBox="0 0 24 24" width="24" height="24">
+                <path fill="currentColor"
+                      d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z">
+                </path>
+            </svg>
+        </div>
+    </button>
+</div>
+
+<script>
+    const html = document.querySelector('html')
+    const dark = document.querySelector('#toggleDark')
+    const light = document.querySelector('#toggleLight')
+
+    //Toggle theme
+//const toggleBtn = document.getElementById("toggle-btn");
+//const dark = document.querySelector('#toggleDark')
+//const light = document.querySelector('#toggleLight')
+
+const theme = document.querySelector("body");
+let darkMode = localStorage.getItem("dark-mode");
+
+//Enable Dark Mode
+const enableDarkMode = () => {
+    theme.classList.add("dark-mode-theme");
+    //toggleBtn.classList.remove("dark-mode-toggle");
+    localStorage.setItem("dark-mode", "enabled");
+}
+
+const disableDarkMode = () => {
+    theme.classList.remove("dark-mode-theme");
+    //toggleBtn.classList.add("dark-mode-toggle");
+    localStorage.setItem("dark-mode", "disabled");
+}
+
+if (darkMode = "enabled"){
+    enableDarkMode();
+}
+
+dark.addEventListener("click", (e)=>{
+    darkMode = localStorage.getItem("dark-mode")
+    if (darkMode === "disabled"){ enableDarkMode();} //else { disableDarkMode();}
+});
+light.addEventListener("click", (e)=>{
+    darkMode = localStorage.getItem("dark-mode")
+    if (darkMode === "enabled"){ disableDarkMode();}
+});
+</script>
+
+</body>
+</html>
